@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Load the datasets
+train_labels_path = '/mnt/data/train_labels.csv'
+train_data_path = '/mnt/data/train.csv'
+test_data_path = '/mnt/data/test.csv'
+
+train_labels = pd.read_csv(train_labels_path)
+train_data = pd.read_csv(train_data_path)
+test_data = pd.read_csv(test_data_path)
+
+# Display the first few rows of each dataframe
+train_labels_head = train_labels.head()
+train_data_head = train_data.head()
+test_data_head = test_data.head()
+
+train_labels_head, train_data_head, test_data_head
